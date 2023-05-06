@@ -1,0 +1,73 @@
+
+// Funkcja rysująca koło o środku w punkcie center i promieniu radius
+float circle(vec2 pt, vec2 center, float radius)
+{
+    // Przeskalowanie współrzędnych x  
+    float ratio = iResolution.x/iResolution.y; 
+    center.x *= ratio;
+    vec2 d = pt - center;
+
+    if(radius >= length(d))
+    {
+        return 1.0;
+    }
+    else
+    {
+        return 0.0;
+    }
+}
+
+
+// Funkcja rysująca pomocniczą siatkę
+float grid(vec2 pt, vec2 fragCoord)
+{
+    float ratio = iResolution.x/iResolution.y;
+    vec2 uv = fragCoord/iResolution.xy;
+    
+    float size = 1.0/10.0;  
+    float edge = size/32.0; 
+    uv = (mod(uv, size) - mod(uv - edge, size) - edge) * 1.0/size;
+ 
+    if(length(uv) > edge)
+    return 1.0;
+    
+    return 0.0;
+}
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Współrzędne pikseli <0,1>
+    vec2 uv = fragCoord/iResolution.xy;
+    
+    // zwiększanie współrzędniej x powoduje ruch ciężarówki
+    // usuń komentarze z poniższych linijek aby zaobserwować ruch
+    //uv.x +=iTime;
+    //float count = 1.0;
+    //uv.x = fract(uv.x * count);
+
+    // Stosunek długości do wysokości wyświetlacza
+    float ratio = iResolution.x/iResolution.y;
+
+    // Przeskalowanie osi X "rozciąga" oś X na cały wyświetlacz
+    uv.x *= ratio;
+    
+   
+    // Rysowanie kół
+    float radius = 0.5;
+    vec2 circleCenter1 = vec2(0.5, 0.5);
+    float inCircle1 = circle(uv,circleCenter1,radius);
+    
+
+    // Kolor koła
+    // TU ZMIENIAJ WARTOSCI WEKTORA COLOR
+    vec3 color = vec3(1.0,0.0,0.0);
+    
+
+
+    color *= inCircle1;
+
+    // Wyświetl pomocniczą siatkę
+    color += vec3(0.5,0.5,0.5)* grid(uv, fragCoord);
+    
+    fragColor = vec4(color,1.0);
+}
