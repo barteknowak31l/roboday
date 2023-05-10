@@ -59,15 +59,15 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     
 
     // Kolor koła
-    // TU ZMIENIAJ WARTOSCI WEKTORA COLOR
-    vec3 color = vec3(1.0,0.0,0.0);
+    // TU ZMIENIAJ WARTOSCI WEKTORA KOLOR
+    vec3 kolor = vec3(1.0,0.0,0.0);
     
 
 
-    color *= inCircle1;
+    kolor *= inCircle1;
 
     // Wyświetl pomocniczą siatkę
-    color += vec3(0.5,0.5,0.5)* grid(uv, fragCoord);
+    kolor += vec3(0.5,0.5,0.5)* grid(uv, fragCoord);
     
-    fragColor = vec4(color,1.0);
+    fragColor = vec4(kolor,1.0);
 }
