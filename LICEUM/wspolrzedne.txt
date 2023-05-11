@@ -17,10 +17,11 @@ float circle(vec2 pt, vec2 center, float promien)
     
     vec2 _d = pt - center;
     float d = length(_d);
+
  // WPISZ W NAWIASY PO SŁOWIE "IF" WARUNEK SPRAWDZAJĄCY, CZY PUNKT NALEŻY DO KOŁA
     // wykorzystaj zmienne:
     // promien - DLUGOSC PROMIENIA
-    // d - ODLEGLOSC OD ŚRODKA KOŁA DO BADANEGO PUNKTU
+    // d - WEKTOR OD ŚRODKA KOŁA DO BADANEGO PUNKTU
     // oraz porównanie:
     // >= (większy lub równy), <= (mniejszy lub równy)
     
@@ -122,12 +123,13 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     uv.x *= ratio;
     
    
+    // TU ZMIENIAJ WARTOŚCI promien I srodekKola
     // Rysowanie kół
     float promien = 0.1;
-    vec2 srodekKola1 = vec2(0.2, 0.2);
+    vec2 srodekKola1 = vec2(0.1, 0.8);
     float inCircle1 = circle(uv,srodekKola1,promien);
     
-    vec2 srodekKola2 = vec2(0.8, 0.2);
+    vec2 srodekKola2 = vec2(0.5, 0.8);
     float inCircle2 = circle(uv,srodekKola2,promien);
     
     // Rysowanie kwadratów

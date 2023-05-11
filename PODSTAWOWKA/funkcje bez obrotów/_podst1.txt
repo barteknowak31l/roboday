@@ -62,12 +62,15 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     // TU ZMIENIAJ WARTOSCI WEKTORA KOLOR
     vec3 kolor = vec3(1.0,0.0,0.0);
     
-
+    // Odkomentuj te linijke, aby zmieniac kolor za pomoca myszki
+    //kolor = vec3(iMouse.xy/iResolution.xy,0.0);
 
     kolor *= inCircle1;
 
     // Wyświetl pomocniczą siatkę
     kolor += vec3(0.5,0.5,0.5)* grid(uv, fragCoord);
+    
+    
     
     fragColor = vec4(kolor,1.0);
 }
