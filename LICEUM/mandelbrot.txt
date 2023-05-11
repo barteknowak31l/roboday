@@ -8,13 +8,13 @@ vec2 kwadrat(vec2 number){
 }
 
 
-float iterateMandelbrot(vec2 liczba){
+float iterateMandelbrot(vec2 c){
 	vec2 zespolona = vec2(0,0);
 	for(int i=0;i < int(maxIterations);i++){
 		
 		// W KAŻDYM KROKU PRZEKSZTAŁĆ PUNKT zespolona
 		// WYKORZYSTAJ FUNKCJE KWADRAT()
-		zespolona = 
+		zespolona = kwadrat(zespolona) + c;
 		if(length(zespolona)>2.0) return float(i)/maxIterations;
 	}
 	return 0.0;
