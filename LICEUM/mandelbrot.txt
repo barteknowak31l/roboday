@@ -9,7 +9,7 @@ vec2 kwadrat(vec2 number){
 
 
 float iterateMandelbrot(vec2 liczba){
-	vec2 z = vec2(0,0);
+	vec2 zespolona = vec2(0,0);
 	for(int i=0;i < int(maxIterations);i++){
 		
 		// W KAŻDYM KROKU PRZEKSZTAŁĆ PUNKT zespolona
