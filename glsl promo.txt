@@ -1,0 +1,18 @@
+Droga Społeczności Programistyczna,
+
+Czy kiedykolwiek chciałeś zgłębić tajemnice wspaniałego świata grafiki komputerowej? Czy marzyłeś o tworzeniu oszałamiających efektów wizualnych, które ożywią Twoje projekty i aplikacje? Jeśli tak, to mamy dla Ciebie niesamowitą okazję!
+
+Z przyjemnością zapraszamy Cię na nasze zajęcia z języka GLSL, w których odkryjesz fascynujący świat shaderów i ich roli w tworzeniu oszałamiających grafik komputerowych. Podczas tych zajęć nauczymy Cię podstaw języka GLSL oraz pokażemy, jak wykorzystać go do tworzenia zaawansowanych efektów wizualnych.
+
+Czym są shadery? Shadery są małymi programami, które kontrolują sposób, w jaki renderowane są obrazy na ekranie. Dzięki nim możemy osiągnąć niezwykłą kontrolę nad wyglądem i zachowaniem obiektów w świecie wirtualnym. Na naszych zajęciach odkryjesz, jak stworzyć różne efekty, takie jak oświetlenie, cienie, tekstury i wiele innych. Będziemy pokazywać Ci, jak manipulować pikselami i wierzchołkami, aby osiągnąć zamierzone rezultaty.
+
+Nie musisz mieć wcześniejszego doświadczenia z GLSL, aby dołączyć do naszych zajęć. Nasz program jest skonstruowany w taki sposób, aby zapewnić Ci solidne podstawy języka i umożliwić Ci rozwijanie swoich umiejętności w swoim własnym tempie. Bez względu na to, czy jesteś początkującym programistą czy doświadczonym weteranem, nasi wykwalifikowani instruktorzy będą tam, aby Cię wspierać i pomagać.
+
+Nie zapomnij, że na naszych zajęciach przeprowadzimy również proste zadania dydaktyczne, które pozwolą Ci na praktyczne zastosowanie wiedzy, którą zdobędziesz. Dzięki temu będziesz mógł/mogła zobaczyć, jak tworzyć niesamowite efekty wizualne samodzielnie.
+
+Jeśli jesteś gotowy/gotowa, by zgłębić tajniki GLSL i posiąść umiejętność tworzenia oszałamiających shaderów, dołącz do nas na naszych zajęciach. Nie przegap tej niezwykłej okazji!
+
+Zapraszamy Cię serdecznie i czekamy na Ciebie na naszych zajęciach z języka GLSL.
+
+Z wyrazami szacunku,
+Zespół Zajęć z Języka GLSL

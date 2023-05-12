@@ -14,7 +14,7 @@ float iterateMandelbrot(vec2 c){
 		
 		// W KAŻDYM KROKU PRZEKSZTAŁĆ PUNKT zespolona
 		// WYKORZYSTAJ FUNKCJE KWADRAT()
-		zespolona = kwadrat(zespolona) + c;
+		zespolona = 
 		if(length(zespolona)>2.0) return float(i)/maxIterations;
 	}
 	return 0.0;
